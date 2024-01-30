@@ -1,55 +1,48 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{######}",
- "creation": "2024-01-30 16:00:36.573916",
+ "autoname": "field:agent_name",
+ "creation": "2024-01-30 16:12:10.306940",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "property_name",
-  "adress",
-  "image",
-  "description",
-  "agent"
+  "agent_name",
+  "email",
+  "phone",
+  "image"
  ],
  "fields": [
   {
-   "fieldname": "property_name",
+   "fieldname": "agent_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Property Name ",
-   "reqd": 1
+   "label": "Agent Name ",
+   "reqd": 1,
+   "unique": 1
   },
   {
-   "fieldname": "adress",
+   "fieldname": "email",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Adress",
-   "reqd": 1
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone "
   },
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
-   "label": "Image "
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Text Editor",
-   "label": "Description"
-  },
-  {
-   "fieldname": "agent",
-   "fieldtype": "Link",
-   "label": "Agent",
-   "options": "Agent"
+   "label": "Image",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-30 16:16:15.706333",
+ "modified": "2024-01-30 16:14:14.038921",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
- "name": "Property",
+ "name": "Agent",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
