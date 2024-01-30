@@ -12,6 +12,9 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/practice_frappe/css/practice_frappe.css"
 # app_include_js = "/assets/practice_frappe/js/practice_frappe.js"
+app_include_js = [
+    "/assets/practice_frappe/js/PO.js"
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/practice_frappe/css/practice_frappe.css"
