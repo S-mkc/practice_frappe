@@ -4,7 +4,14 @@
 frappe.ui.form.on("Property", {
 // 	refresh(frm) {
     setup: function(frm){
-        console.log(frm)
+        // frm.add_custom_button('Hello from Frappe', () => {
+        //     // frappe.set_route('Form', frm.doc.reference_type, frm.doc.reference_name);
+        // })
+    },
+    refresh: function(frm) {
+        frm.add_custom_button('send for approval', () => {
+            // frappe.set_route('Form', frm.doc.reference_type, frm.doc.reference_name);
+        })
     }
 
 // 	},
