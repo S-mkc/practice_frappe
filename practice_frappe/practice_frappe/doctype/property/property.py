@@ -8,15 +8,19 @@ import frappe
 
 # @frappe.whitelist()
 class Property(Document):
+
 	#validates
-    def validate(self):
+    # def validate(self):
 
     #     frappe.throw((f'This is an Error Message to check <b>{self.name}<b>'))
-        if(self.property_type=="Flat"):
-            for amenity in self.amenities:
-                if(amenity.amenity=="Outdoor Kitchen"):
-                    frappe.throw((f'For property <b>{self.name}</b> the amenity type is <b>{amenity.amenity}</b> tye again'))
-                
+        # if(self.property_type=="Flat"):
+        #     for amenity in self.amenities:
+        #         if(amenity.amenity=="Outdoor Kitchen"):
+        #             frappe.throw((f'For property <b>{self.name}</b> the amenity type is <b>{amenity.amenity}</b> tye again'))
+    def after_insert(self):
+        frappe.msgprint((f'Document {self.name} inserted successfully'))
+        
+
 
 
 
