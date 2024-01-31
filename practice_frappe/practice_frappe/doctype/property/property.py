@@ -6,8 +6,18 @@ from __future__ import unicode_literals
 from frappe.model.document import Document
 import frappe
 
+@frappe.whitelist()
 class Property(Document):
 	#validates
     def validate(self):
-        frappe.throw((f'This is an Error Message to check'))
+
+    #     frappe.throw((f'This is an Error Message to check <b>{self.name}<b>'))
+        if(self.property_type=="Flat"):
+            for amenity in self.amenities:
+                if(amenity.amenity=="Outdoor Kitchen"):
+                    frappe.throw((f'For property<b>{self.name}<b> the amenity type is {amenity.amenity} tye again'))
+                
+
+
+
 
