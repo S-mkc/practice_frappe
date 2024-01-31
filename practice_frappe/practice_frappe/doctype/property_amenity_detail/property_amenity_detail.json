@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-01-30 16:43:46.168830",
+ "creation": "2024-01-31 11:30:04.509340",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -13,7 +13,7 @@
    "fieldname": "amenity",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Amenity",
+   "label": "Amenity ",
    "options": "Property Amenity Item",
    "reqd": 1
   }
@@ -21,7 +21,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-01-30 16:44:21.523953",
+ "modified": "2024-01-31 11:31:27.324591",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
  "name": "Property Amenity Detail",

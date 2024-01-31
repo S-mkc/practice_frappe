@@ -8,9 +8,14 @@
  "field_order": [
   "property_name",
   "adress",
+  "property_type",
   "image",
+  "agent",
+  "status",
+  "section_break_lbcc",
   "description",
-  "agent"
+  "section_break_gah0",
+  "amenities"
  ],
  "fields": [
   {
@@ -42,11 +47,41 @@
    "fieldtype": "Link",
    "label": "Agent",
    "options": "Agent"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_gah0",
+   "fieldtype": "Section Break",
+   "label": "Amenities Section"
+  },
+  {
+   "fieldname": "amenities",
+   "fieldtype": "Table",
+   "label": "Amenities",
+   "options": "Property Amenity Detail"
+  },
+  {
+   "fieldname": "section_break_lbcc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Link",
+   "label": "Property Type",
+   "options": "Proprty Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status ",
+   "options": "\nSale\nRent\nLease",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-30 16:16:15.706333",
+ "modified": "2024-01-31 12:18:46.388780",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
  "name": "Property",
