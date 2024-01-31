@@ -19,7 +19,7 @@ class Property(Document):
         #             frappe.throw((f'For property <b>{self.name}</b> the amenity type is <b>{amenity.amenity}</b> tye again'))
     def after_insert(self): 
         # creat new one then only it will worr
-        frappe.msgprint(f'Document {self.address} inserted successfully')
+        frappe.msgprint(f'Document {self.adress} inserted successfully')
 
 
 
