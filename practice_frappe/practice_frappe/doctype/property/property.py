@@ -15,7 +15,7 @@ class Property(Document):
         if(self.property_type=="Flat"):
             for amenity in self.amenities:
                 if(amenity.amenity=="Outdoor Kitchen"):
-                    frappe.throw((f'For property<b>{self.name}<b> the amenity type is <b>{amenity.amenity}<b> tye again'))
+                    frappe.throw((f'For property <b>{self.name}</b> the amenity type is <b>{amenity.amenity}</b> tye again'))
                 
 
 
