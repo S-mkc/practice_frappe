@@ -11,7 +11,13 @@ frappe.ui.form.on("Property", {
     refresh: function(frm) {
         frm.add_custom_button('send for approval', () => {
             // frappe.set_route('Form', frm.doc.reference_type, frm.doc.reference_name);
-        })
+        }, "Action");
+        frm.add_custom_button('Approve', () => {
+            // frappe.set_route('Form', frm.doc.reference_type, frm.doc.reference_name);
+        }, "Action");
+        frm.add_custom_button('Reject', () => {
+            // frappe.set_route('Form', frm.doc.reference_type, frm.doc.reference_name);
+        }, "Action");
     }
 
 // 	},
